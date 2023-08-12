@@ -1,11 +1,5 @@
-catgirl.sh
-==========
-    sources for my personal website, using bash as a "templating" system
+sources for my personal website, using bash as a "templating" system
 
 usage
 -----
     $ ./make.sh
-
-depends on
-----------
-    * bash

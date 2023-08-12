@@ -24,8 +24,9 @@ _ << EOF
         </p>
         <ul>
            $(item pages ./writing.html 'My writing' ', Non-ficiton, semi-interesting, reflective things.')
-           $(item pages ./articles.html Other\'s\ writing ,\ Other\ people\'s\ writing)
+           $(item pages ./articles.html Other\'s\ writing)
            $(item pages ./books.html 'Reading list' ', An attempt to catalog everything I read')
+           $(item pages https://github.com/0x3444ac53/Not-Important "this site" 'on github')
         </ul>
         </br>
         <p>
