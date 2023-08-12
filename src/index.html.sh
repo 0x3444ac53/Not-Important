@@ -3,7 +3,7 @@ _ << EOF
 <html>
     <meta name="viewport"  content="width=device-width">
     $(link stylesheet text/css  src/css/index.css)
-    $(link icon       image/gif src/imgs/icon.gif)
+    $(link icon       image/jpg src/imgs/icon.jpg)
     <head>
         <title>
             $name
