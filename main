@@ -4,7 +4,7 @@ github=https://github.com/0x3444ac53
 instagram=https://www.instagram.com/discounted_dyke
 
 #colors
-colorscheme='/home/ellie/repos/base16-schemes/atelier-savanna-light.yaml'
+colorscheme='/home/ellie/repos/base16-schemes/atlas.yaml'
 source <(python3 -c "import yaml;[print(f\"{i[0]}={i[1]}\") for i in map(lambda x: (x[0], f\"\'#{x[1]}\'\" if x[0][0] == 'b' else f\"\'{x[1]}\'\"), yaml.load(open('$colorscheme')).items())]")
 
 # functions
