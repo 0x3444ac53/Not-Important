@@ -1,0 +1,8 @@
+@font-face {
+    font-family: kiwi;
+    src: url("../fonts/kiwi.ttf") format("truetype");
+}
+
+* { font-family: kiwi; }
+
+body { margin: 0; }

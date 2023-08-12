@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Handjet;
+    src: url("../fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf") format("truetype");
+}
+
+* {
+    font-family: Handjet;
+    font-size: 32px;
+    filter: contrast(1);
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
+}
+
+body {
+    background-color: #ecf4ee;
+    color: #232a25;
+    margin-bottom: 2ch;
+}
+
+li { list-style-type: none; }
+
+ul {
+    padding: 0;
+    margin: 0ch 4ch 0ch 4ch;
+}
+
+pre { margin: 2ch 2ch 1ch 2ch; }
+
+p   { 
+    margin: 0ch 2ch 0ch 2ch; 
+    width: 60ch;
+    max-width: 100%;
+}
+
+a { text-decoration: none; }
+
+a.social { color: #489963; }
+a.pages  { color: #1c9aa0; }
+
+a:hover {
+    text-decoration: underline 2px;
+}
+
+table {
+  margin-bottom: 2em;
+  width: 50%; 
+  margin-right: auto;
+  background-color: #dfe7e2
+  color: #5f6d64
+}
+
+th {
+  border-bottom: 2px solid #ccc;
+  font-weight: bold;
+  text-align: left; 
+  background-color: #dfe7e2;  
+  color: #5f6d64;
+}
+
+.emoji {
+ font-size: 22px;
+}
+
+td {
+  border-bottom: 1px solid #ddd; }
+
+caption, th, td {
+  padding: 4px 10px 4px 0; }
+
+caption {
+  background: #f1f1f1;
+  margin-bottom: 1em;
+  padding: 10px 0; }
+
+tr, td, th {
+  vertical-align: middle; }
+
+/* Use this if you use span-x classes on th/td. */
+table .last {
+  padding-right: 0; }
+
+@media only screen and (min-width: 600px) {
+    pre  { margin: 4ch 4ch 2ch 4ch; }
+    ul   { margin: 0ch 12ch 0ch 12ch; }
+    p    { margin: 0ch 8ch 0ch 8ch; }
+    body { margin-bottom: 4ch;  }
+}

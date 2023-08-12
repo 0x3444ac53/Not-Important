@@ -10,39 +10,22 @@ _ << EOF
         </title>
     </head>
     <body>
-        <pre>
- /\\_/\\ &lt;3
- &gt;^.^&lt;...
-, / \\
-\\(___)
-        </pre>
         <p>
-            Hello ! My name is Camille and I'm a $(((`date +%s` - `date -d 1995-11-22 +%s`) / 31536000)) years old :</br
+            Hello! My name is Leonora and I wanted to make a personal site.
         </p>
-        <ul>
-            $(list '* Software developer')
-            $(list '* Photographer')
-            $(list '* Pixel-Artist')
-            $(list '* Nixer')
-            $(list '* ...')
-        </ul>
-        <p>
-            From France, currently living in Ireland.
+
+        <p> I wouldn't expect things to
+            show up on here regularly, but I wanted a small corner of the internet to aggregate things 
+            I make and like.
         </p>
         </br>
         <p>
-            Projects :
+            Pages :
         </p>
         <ul>
-            $(item projects "$github/bdf2ttx"    bdf2ttx    ', a tool to convert BDF files to TTX')
-            $(item projects "$github/brightness" brightness ', a tool to manage brightness on Linux systems')
-            $(item projects "$github/catgirl.sh" catgirl.sh ', this website, using Bash as a templating system')
-            $(item projects "$github/cherry"     cherry     ', a bitmap font, coming in different weights and sizes')
-            $(item projects "$github/color"      color      ', a tool to do simple modifications on a list of colors')
-            $(item projects "$github/correct"    correct    ', a tool intended to correct spelling mistakes in commands')
-            $(item projects "$github/dots"       dots       ', my configuration files')
-            $(item projects "$github/prtutils"   prtutils   ', some scripts for crux ports management')
-            $(item projects "$github/turquoise"  turquoise  ', my crux ports repository')
+           $(item pages ./writing.html 'My writing' ', Non-ficiton, semi-interesting, reflective things.')
+           $(item pages ./articles.html Other\'s\ writing ,\ Other\ people\'s\ writing)
+           $(item pages ./books.html 'Reading list' ', An attempt to catalog everything I read')
         </ul>
         </br>
         <p>
@@ -50,9 +33,12 @@ _ << EOF
         </p>
         <ul>
             $(item social "$github"   github)
-            $(item social "$telegram" telegram)
-            $(item social "$unsplash" unsplash)
+            $(item social "$instagram" instagram)
         </ul>
+        </br>
+        <p>This site was created by forking $(atag social "https://catgirl.sh" "catgirl.sh") by $(atag social "https://github.com/turquoise-hexagon" Camille)</p>
     </body>
+    <div id='footer'>
+    </div>
 </html>
 EOF

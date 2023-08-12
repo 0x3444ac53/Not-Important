@@ -1,11 +1,11 @@
 _ << EOF
 @font-face {
-    font-family: kiwi;
-    src: url("../fonts/kiwi.ttf") format("truetype");
+    font-family: Handjet;
+    src: url("../fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf") format("truetype");
 }
 
 * {
-    font-family: kiwi;
+    font-family: Handjet;
     font-size: 32px;
     filter: contrast(1);
     -webkit-font-smoothing: none;
@@ -13,8 +13,8 @@ _ << EOF
 }
 
 body {
-    background-color: $background;
-    color: $foreground;
+    background-color: $base00;
+    color: $base06;
     margin-bottom: 2ch;
 }
 
@@ -27,16 +27,58 @@ ul {
 
 pre { $(margin 2 2 1 2); }
 
-p   { $(margin 0 2 0 2); }
+p   { 
+    $(margin 0 2 0 2); 
+    width: 60ch;
+    max-width: 100%;
+}
 
 a { text-decoration: none; }
 
-a.social   { color: $accent1; }
-a.projects { color: $accent2; }
+a.social { color: $base0B; }
+a.pages  { color: $base0C; }
 
 a:hover {
     text-decoration: underline 2px;
 }
+
+table {
+  margin-bottom: 2em;
+  width: 50%; 
+  margin-right: auto;
+  background-color: $base01
+  color: $base04
+}
+
+th {
+  border-bottom: 2px solid #ccc;
+  font-weight: bold;
+  text-align: left; 
+  background-color: $base01;  
+  color: $base04;
+}
+
+.emoji {
+ font-size: 22px;
+}
+
+td {
+  border-bottom: 1px solid #ddd; }
+
+caption, th, td {
+  padding: 4px 10px 4px 0; }
+
+caption {
+  background: #f1f1f1;
+  margin-bottom: 1em;
+  padding: 10px 0; }
+
+tr, td, th {
+  vertical-align: middle; }
+
+/* Use this if you use span-x classes on th/td. */
+table .last {
+  padding-right: 0; }
 
 @media only screen and (min-width: 600px) {
     pre  { $(margin 4  4 2  4); }

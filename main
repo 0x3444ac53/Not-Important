@@ -1,19 +1,15 @@
 # variables
-name=catgirl.sh
+name="Nora's site"
+github=https://github.com/0x3444ac53
+instagram=https://www.instagram.com/discounted_dyke
 
-github=https://github.com/turquoise-hexagon
-telegram=https://t.me/bourneagainshell
-unsplash=https://unsplash.com/@saturday_sun
-
-accent1='#D87E8F'
-accent2='#71AAC5'
-background='#102029'
-foreground='#EDEEF0'
+#colors
+colorscheme='/home/ellie/repos/base16-schemes/atelier-savanna-light.yaml'
+source <(python3 -c "import yaml;[print(f\"{i[0]}={i[1]}\") for i in map(lambda x: (x[0], f\"\'#{x[1]}\'\" if x[0][0] == 'b' else f\"\'{x[1]}\'\"), yaml.load(open('$colorscheme')).items())]")
 
 # functions
+atag() { printf '%s' "<a class=\"$1\" href=\"$2\">$3</a>"; }
 list() { printf '%s' "<li>$*</li>"; }
 margin() { printf '%s' "margin: $1ch $2ch $3ch $4ch"; }
 item() { list "* <a class=\"$1\" href=\"$2\">$3</a>$4"; }
 link() { printf '%s' "<link rel=\"$1\" type=\"$2\" href=\"$3\">"; }
-
-# vim: ft=sh
