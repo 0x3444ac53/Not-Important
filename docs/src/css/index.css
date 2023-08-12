@@ -12,8 +12,8 @@
 }
 
 body {
-    background-color: #002635;
-    color: #e6e6dc;
+    background-color: #0F1419;
+    color: #E6E1CF;
     margin-bottom: 2ch;
 }
 
@@ -34,8 +34,8 @@ p   {
 
 a { text-decoration: none; }
 
-a.social { color: #7fc06e; }
-a.pages  { color: #14747e; }
+a.social { color: #B8CC52; }
+a.pages  { color: #95E6CB; }
 
 a:hover {
     text-decoration: underline 2px;
@@ -45,16 +45,16 @@ table {
   margin-bottom: 2em;
   width: 50%; 
   margin-right: auto;
-  background-color: #00384d
-  color: #869696
+  background-color: #131721
+  color: #BFBDB6
 }
 
 th {
   border-bottom: 2px solid #ccc;
   font-weight: bold;
   text-align: left; 
-  background-color: #00384d;  
-  color: #869696;
+  background-color: #131721;  
+  color: #BFBDB6;
 }
 
 .emoji {
