@@ -7,14 +7,14 @@ _()
 
 . main
 
-rm -rf   "$name"
-mkdir -p "$name"
+rm -rf   "docs"
+mkdir -p "docs"
 
 shopt -s globstar
 
 for src in src/**; {
     tmp=${src%.sh}
-    tmp=${tmp/#src/$name}
+    tmp=${tmp/#src/docs}
 
     [[ -d $src ]] && {
         mkdir -p "$tmp"
