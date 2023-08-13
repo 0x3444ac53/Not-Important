@@ -2,8 +2,8 @@ _ << EOF
 <meta charset="utf-8"/>
 <html>
     <meta name="viewport"  content="width=device-width">
-    $(link stylesheet text/css  src/css/index.css)
-    $(link icon       image/jpg src/imgs/icon.jpg)
+    $(headerlink stylesheet text/css  src/css/index.css)
+    $(headerlink icon       image/jpg src/imgs/icon.jpg)
     <head>
         <title>
             $name
@@ -23,21 +23,21 @@ _ << EOF
             Pages :
         </p>
         <ul>
-           $(item pages ./writing.html 'My writing' ', Non-ficiton, semi-interesting, reflective things.')
-           $(item pages ./articles.html Other\'s\ writing)
-           $(item pages ./books.html 'Reading list' ', An attempt to catalog everything I read')
-           $(item pages https://github.com/0x3444ac53/Not-Important "this site" ' on github')
+           $(list $(page ./writing.html 'My writing' ', Non-ficiton, semi-interesting, reflective things.'))
+           $(list $(page ./articles.html Other\'s\ writing))
+           $(list $(page ./books.html 'Reading list' ', An attempt to catalog everything I read'))
+           $(list $(page https://github.com/0x3444ac53/Not-Important "this site" ' on github'))
         </ul>
         </br>
         <p>
             Social :
         </p>
         <ul>
-            $(item social "$github"   github)
-            $(item social "$instagram" instagram)
+            $(list $(atag social "$github" github))
+            $(list $(atag social "$instagram" instagram))
         </ul>
         </br>
-        <p>This site was created by forking $(atag social "https://catgirl.sh" "catgirl.sh") by $(atag social "https://github.com/turquoise-hexagon" Camille)</p>
+        <p>This site was created by forking $(atag acknowledge "https://catgirl.sh" "catgirl.sh") by $(atag acknowledge "https://github.com/turquoise-hexagon" Camille)</p>
     </body>
     <div id='footer'>
     </div>

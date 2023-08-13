@@ -4,12 +4,13 @@ github=https://github.com/0x3444ac53
 instagram=https://www.instagram.com/discounted_dyke
 
 #colors
-colorscheme='/home/ellie/repos/base16-schemes/ayu-dark.yaml'
+colorscheme=$(shuf -n 1 <(find ~/repos/base16-schemes))
 source <(python3 -c "import yaml;[print(f\"{i[0]}={i[1]}\") for i in map(lambda x: (x[0], f\"\'#{x[1]}\'\" if x[0][0] == 'b' else f\"\'{x[1]}\'\"), yaml.load(open('$colorscheme')).items())]")
 
 # functions
-atag() { printf '%s' "<a class=\"$1\" href=\"$2\">$3</a>"; }
+atag() { printf '%s' "<a class=\"$1\" href=\"$2\">$3</a>$4"; }
+page() { atag pages "$@"; }
 list() { printf '%s' "<li>$*</li>"; }
 margin() { printf '%s' "margin: $1ch $2ch $3ch $4ch"; }
-item() { list "* <a class=\"$1\" href=\"$2\">$3</a>$4"; }
-link() { printf '%s' "<link rel=\"$1\" type=\"$2\" href=\"$3\">"; }
+link() { list "+ <a class=\"$1\" href=\"$2\">$3</a>$4"; }
+headerlink() { printf '%s' "<link rel=\"$1\" type=\"$2\" href=\"$3\">"; }
