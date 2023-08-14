@@ -10,6 +10,9 @@ _ << EOF
         </title>
     </head>
     <body>
+    <pre>
+       $(img src/imgs/squid.png "" "120px" "auto") 
+    </pre>
         <p>
             Hello! My name is Leonora and I wanted to make a personal site.
         </p>
@@ -23,23 +26,25 @@ _ << EOF
             Pages :
         </p>
         <ul>
-           $(list $(page ./writing.html 'My writing' ', Non-ficiton, semi-interesting, reflective things.'))
-           $(list $(page ./articles.html Other\'s\ writing))
-           $(list $(page ./books.html 'Reading list' ', An attempt to catalog everything I read'))
-           $(list $(page https://github.com/0x3444ac53/Not-Important "this site" ' on github'))
+            $(list ✧ $(page ./writing.html 'My writing' ', Non-ficiton, semi-interesting, reflective things.'))
+            $(list ✧ $(page ./articles.html Other\'s\ writing))
+            $(list ✧ $(page ./books.html 'Reading list' ', An attempt to catalog everything I read'))
+            $(list ✧ $(page https://github.com/0x3444ac53/Not-Important "this site" ' on github'))
         </ul>
         </br>
         <p>
             Social :
         </p>
         <ul>
-            $(list $(atag social "$github" github))
-            $(list $(atag social "$instagram" instagram))
+            $(list ✧ $(atag social "$github" github))
+            $(list ✧ $(atag social "$instagram" instagram))
         </ul>
         </br>
-        <p>This site was created by forking $(atag acknowledge "https://catgirl.sh" "catgirl.sh") by $(atag acknowledge "https://github.com/turquoise-hexagon" Camille)</p>
-    </body>
-    <div id='footer'>
-    </div>
+        <p>Acknowledgements</p>
+        <ul>
+            $(list ✧ This site was created by forking $(atag acknowledge "https://catgirl.sh" "catgirl.sh") by $(atag acknowledge "https://github.com/turquoise-hexagon" Camille))
+            $(list ✧ Colorscheme is $scheme by $author)
+        </ul>
+        </body>
 </html>
 EOF

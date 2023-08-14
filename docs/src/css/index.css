@@ -12,8 +12,8 @@
 }
 
 body {
-    background-color: #fbf1f2;
-    color: #72677E;
+    background-color: #f1efee;
+    color: #2c2421;
     margin-bottom: 2ch;
 }
 
@@ -34,29 +34,29 @@ p   {
 
 a { text-decoration: none; }
 
-a.social { color: #A3B367; }
-a.pages  { color: #69A9A7; }
-a.acknowledge { color: #7297B9; }
+a.social { color: #7b9726; }
+a.pages  { color: #3d97b8; }
+a.acknowledge { color: #407ee7; }
 
 a:hover {
     text-decoration: underline 2px;
-    color: #585062;
+    color: #1b1918;
 }
 
 table {
   margin-bottom: 2em;
   width: 50%; 
   margin-right: auto;
-  background-color: #f2f1f4
-  color: #a59daf
+  background-color: #e6e2e0
+  color: #766e6b
 }
 
 th {
   border-bottom: 2px solid #ccc;
   font-weight: bold;
   text-align: left; 
-  background-color: #f2f1f4;  
-  color: #a59daf;
+  background-color: #e6e2e0;  
+  color: #766e6b;
 }
 
 .emoji {
