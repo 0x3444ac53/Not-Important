@@ -26,9 +26,9 @@ _ << EOF
             Pages :
         </p>
         <ul>
-            $(list ✧ $(page ./writing.html 'My writing' ', Non-ficiton, semi-interesting, reflective things.'))
+            $(list ✧ $(page ./writing.html 'My writing'))
             $(list ✧ $(page ./articles.html Other\'s\ writing))
-            $(list ✧ $(page ./books.html 'Reading list' ', An attempt to catalog everything I read'))
+            $(list ✧ $(page ./books.html 'Reading list' ))
             $(list ✧ $(page https://github.com/0x3444ac53/Not-Important "this site" ' on github'))
         </ul>
         </br>
