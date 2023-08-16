@@ -38,6 +38,8 @@ a { text-decoration: none; }
 a.social { color: $base0B; }
 a.pages  { color: $base0C; }
 a.acknowledge { color: $base0D; }
+a.video { color: $base08 }
+a.article { color:$base0D }
 
 a:hover {
     text-decoration: underline 2px;

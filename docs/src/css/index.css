@@ -12,8 +12,8 @@
 }
 
 body {
-    background-color: #f1efee;
-    color: #2c2421;
+    background-color: #eff1f5;
+    color: #dc8a78;
     margin-bottom: 2ch;
 }
 
@@ -34,29 +34,31 @@ p   {
 
 a { text-decoration: none; }
 
-a.social { color: #7b9726; }
-a.pages  { color: #3d97b8; }
-a.acknowledge { color: #407ee7; }
+a.social { color: #40a02b; }
+a.pages  { color: #179299; }
+a.acknowledge { color: #1e66f5; }
+a.video { color: #d20f39 }
+a.article { color:#1e66f5 }
 
 a:hover {
     text-decoration: underline 2px;
-    color: #1b1918;
+    color: #7287fd;
 }
 
 table {
   margin-bottom: 2em;
   width: 50%; 
   margin-right: auto;
-  background-color: #e6e2e0
-  color: #766e6b
+  background-color: #e6e9ef
+  color: #acb0be
 }
 
 th {
   border-bottom: 2px solid #ccc;
   font-weight: bold;
   text-align: left; 
-  background-color: #e6e2e0;  
-  color: #766e6b;
+  background-color: #e6e9ef;  
+  color: #acb0be;
 }
 
 .emoji {
