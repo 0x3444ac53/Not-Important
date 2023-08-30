@@ -16,7 +16,6 @@ $<(map li)>$
 <html>
     <meta name="viewport"  content="width=device-width">
     $<(headerlink "stylesheet" "text/css"  "src/css/index.css")>$
-    $<(headerlink "stylesheet" "text/css"  "src/css/newsletter.css")>$
     $<(headerlink "icon"       "image/jpg" "src/imgs/icon.jpg")>$
     <head>
         <title>

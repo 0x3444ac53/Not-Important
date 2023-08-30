@@ -1,4 +1,3 @@
-_ << EOF
 @font-face {
     font-family: Handjet;
     src: url("../fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf") format("truetype");
@@ -13,8 +12,8 @@ _ << EOF
 }
 
 body {
-    background-color: $base00;
-    color: $base06;
+    background-color: $<(base01)>$;
+    color: $<(base06)>$;
     margin-bottom: 2ch;
 }
 
@@ -22,44 +21,45 @@ li { list-style-type: none; }
 
 ul {
     padding: 0;
-    $(margin 0 4 0 4);
+    $<(margin 0 4 0 4)>$;
 }
 
-pre { $(margin 2 2 1 2); }
+pre { $<(margin 2 2 1 2)>$; }
 
 p   { 
-    $(margin 0 2 0 2); 
+    $<(margin 0 2 0 2)>; 
     width: 60ch;
     max-width: 100%;
 }
 
 a { text-decoration: none; }
 
-a.social { color: $base0B; }
-a.pages  { color: $base0C; }
-a.acknowledge { color: $base0D; }
-a.video { color: $base08 }
-a.article { color:$base0D }
+a.social { color: $<(base0E)>$; }
+a.pages  { color: $<(base05)>$; }
+a.acknowledge { color: $<(base0D)>$; }
+a.article { color:$<(base0D)>$ }
+a.bloglink { color:$<(base0E)>$ }
 
 a:hover {
     text-decoration: underline 2px;
-    color: $base07;
+    color: $<(base07)>$;
 }
+
 
 table {
   margin-bottom: 2em;
   width: 50%; 
   margin-right: auto;
-  background-color: $base01
-  color: $base04
+  background-color: $<(base01)>$;
+  color: $<(base04)>$;
 }
 
 th {
   border-bottom: 2px solid #ccc;
   font-weight: bold;
   text-align: left; 
-  background-color: $base01;  
-  color: $base04;
+  background-color: $<(base01)>$;  
+  color: $<(base04)>$;
 }
 
 .emoji {
@@ -85,9 +85,8 @@ table .last {
   padding-right: 0; }
 
 @media only screen and (min-width: 600px) {
-    pre  { $(margin 4  4 2  4); }
-    ul   { $(margin 0 12 0 12); }
-    p    { $(margin 0  8  0 8); }
+    pre  { $<(margin 4  4 2  4)>$; }
+    ul   { $<(margin 0 12 0 12)>$; }
+    p    { $<(margin 0  8  0 8)>$; }
     body { margin-bottom: 4ch;  }
 }
-EOF

@@ -17,7 +17,7 @@
 (func margin "margin: {0}ch {1}ch {2}ch {3}ch")
 
 ;setting colorscheme
-(func colorscheme "/home/ellie/repos/base16-schemes/apathy.yaml")
+(func colorscheme "/home/ellie/repos/base16-schemes/cupcake.yaml")
 (push "'.strip())).items())]")
 (push (colorscheme))
 (push "yaml.load(open('")
