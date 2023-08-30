@@ -68,7 +68,7 @@ def make_book_list(books):
 
 # Nora's Book List
 
-$(python3 Books.py | ~/.luarocks/bin/djot)
+$<(execute "python3 Books.py | ~/.luarocks/bin/djot")>$
 
 ## Currently Reading
 |  Title  |  Author  | Started on |
