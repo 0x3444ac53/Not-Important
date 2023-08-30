@@ -1,0 +1,33 @@
+<meta charset="utf-8"/>
+<!---
+define some names
+$<(func internetprincess (artist "https://internetprincess.substack.com/" "internet princess"))>$
+$<(func foldingideas (artist "https://www.youtube.com/FoldingIdeas" "Folding Ideas"))>$
+$<(func andrea (artist "https://www.andrealongchu.com/" "Andrea Long Chu"))>$
+
+add some articles
+$<(push (concat " " "*" (art "https://internetprincess.substack.com/p/no-good-alone" "No good Alone") "by" (internetprincess)))>$
+$<(push (concat " " "*" (art "https://internetprincess.substack.com/p/standing-on-the-shoulders-of-complex" "standing on the shoulders of complex female characters") "by" (internetprincess)))>$
+$<(push (concat " " "*" (art "https://www.youtube.com/watch?v=YQ_xWvX1n9g" "Line Goes Up") "by" (foldingideas)))>$
+$<(push (concat " " "*" (art "https://www.nplusonemag.com/issue-30/essays/on-liking-women/" "On liking Women") "by" (andrea)))>$
+and then
+$<(map li)>$
+---!>
+<html>
+    <meta name="viewport"  content="width=device-width">
+    $<(headerlink "stylesheet" "text/css"  "src/css/index.css")>$
+    $<(headerlink "stylesheet" "text/css"  "src/css/newsletter.css")>$
+    $<(headerlink "icon"       "image/jpg" "src/imgs/icon.jpg")>$
+    <head>
+        <title>
+        $<(concat " " (name) "- articles">$
+        </title>
+    </head>
+    <body>
+    <pre>
+       $<(img "src/imgs/squid.png" "" "120px" "auto")>$
+       <h2>Articles I make all my friends read</h2>
+    </pre>
+    $<(ul (concat "\n"))>$
+    </body>
+</html>

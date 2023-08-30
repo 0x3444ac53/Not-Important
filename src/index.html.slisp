@@ -1,0 +1,47 @@
+<meta charset="utf-8"/>
+<html>
+    <meta name="viewport"  content="width=device-width">
+    $<(headerlink stylesheet "text/css"  "src/css/index.css")>$
+    $<(headerlink icon       "image/jpg" "src/imgs/icon.jpg")>$
+    <head>
+        <title>
+            $<(name)>$
+        </title>
+    </head>
+    <body>
+    <pre>
+       $<(img "src/imgs/squid.png" "squid" "120px" "auto")>$
+    </pre>
+        <p>
+            Hello! My name is Leonora and I wanted to make a personal site.
+        </p>
+
+        <p> I wouldn't expect things to show up on here regularly, but I wanted a small corner of the internet to aggregate things I make and like.
+        </p>
+        </br>
+        <p>
+            Pages :
+        </p>
+        <ul>
+            $<(li (concat " " "*" (page "./writing.html" "My writing")))>$
+            $<(li (concat " " "*" (page "./articles.html" "Other's writing")))>$
+            $<(li (concat " " "*" (page "./books.html" "Reading list" )))>$
+            $<(li (concat " " "*" (page "https://github.com/0x3444ac53/Not-Important" "this site") "on github"))>$
+            $<(li (concat " " "*" (page "https://github.com/0x3444ac53/HCSL" "a dsl") "called 'slisp' that I created to template this site"))>$
+        </ul>
+        </br>
+        <p>
+            Social :
+        </p>
+        <ul>
+            $<(li (concat " " "*" (atag (github) social github)))>$
+            $<(li (concat " " "*" (atag (instagram) social instagram)))>$
+        </ul>
+        </br>
+        <p>Acknowledgements</p>
+        <ul>
+            $<(li (concat " " "*" "This site was <em>initially</em> created by forking" (atag "https://catgirl.sh" "acknowledge" "catgirl.sh") "by" (atag "https://github.com/turquoise-hexagon" "acknowledge" "Camille") "which was created using bash as a 'templating system'"))>$
+            $<(li (concat " " "*" "Colourscheme is" (scheme) "by" (author)))>$
+        </ul>
+        </body>
+</html>
