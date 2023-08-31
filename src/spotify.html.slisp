@@ -1,0 +1,44 @@
+<meta charset="utf-8"/>
+<!---
+define spotify
+$<(func spotify "<div><div class={dq}lbracket bracket{dq}></div><iframe class=spotify height=380 style={dq}border-radius:12px{dq} src={dq}https://open.spotify.com/embed/playlist/{0}?utm_source=generator{dq} loading={dq}lazy{dq}></iframe><div class={dq}rbracket bracket{dq}></div> </div>")>$
+
+
+$<(push (spotify "5E9gO4D2yAT0w7t4TJ4wrL"))>$
+$<(push (spotify "6h80oaRCLmdkYtHXFf2znN"))>$
+$<(push (spotify "1MHY7VkiqEYcmfmU5AorpS"))>$
+$<(push (spotify "3hLCG4LiKxzlSOh8mGsSOx"))>$
+$<(push (spotify "4Z6klPX1pPkNaN6XMcJ4nH"))>$
+$<(push (spotify "2SuSXhiWKQZ2Szmlrap7Mi"))>$
+$<(push (spotify "2kPmWRxCCzPbcf9h25J4E0"))>$
+$<(push (spotify "51UU10FTBAv68WS47ahzQH"))>$
+$<(push (spotify "31b44xqIA8HmXe891VsnFX"))>$
+$<(push (spotify "4uf7tvFmDwcdAkOrMQezZp"))>$
+$<(push (spotify "5dbNsqVG2nIKTYcWoVeaWu"))>$
+$<(push (spotify "6T2NXo6wps3WPUypuTUbsH"))>$
+$<(push (spotify "0qdertZEyPCTW2sm4zf7E2"))>$
+$<(push (spotify "1ABlgHEQeGgzzsJcM5zK17"))>$
+$<(push (spotify "4gNPxe7iRLFFwsG96rp5jS"))>$
+$<(push (spotify "06QGEnCPRtwamLpZq0UcBY"))>$
+$<(push (spotify "61NAPcNSom0bw8EXw1noFj"))>$
+$<(push (spotify "7bO0Zs0Sg1BZVp8XTGAyGi"))>$
+(debug)
+(map li)
+---!>
+<html>
+    <meta name="viewport"  content="width=device-width">
+    $<(headerlink "stylesheet" "text/css"  "src/css/index.css")>$
+    $<(headerlink "icon"       "image/jpg" "src/imgs/icon.jpg")>$
+    <head>
+        <title>
+        $<(concat " " (name) "- spotify">$
+        </title>
+    </head>
+    <body>
+    <pre>
+       $<(img "src/imgs/squid.png" "" "120px" "auto")>$
+    </pre>
+    <h3>I make a spotify playlist (almost) every month</h3>
+    $<( ul (concat "\n"))>$
+    </body>
+</html>

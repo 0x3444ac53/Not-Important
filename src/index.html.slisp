@@ -12,36 +12,49 @@
     <pre>
        $<(img "src/imgs/squid.png" "squid" "120px" "auto")>$
     </pre>
-        <p>
-            Hello! My name is Leonora and I wanted to make a personal site.
-        </p>
-
-        <p> I wouldn't expect things to show up on here regularly, but I wanted a small corner of the internet to aggregate things I make and like.
+        <p style="font-family: HandWriting">
+            Hello! My name is Leonora and I wanted to make a personal site.</br>
+            I wouldn't expect things to show up on here regularly, but I wanted a small corner of the internet to aggregate things I make and like.
         </p>
         </br>
-        <p>
+           <!---
+            $<(push (concat " " "🗟" (page "./articles.html" "Other's stuff")))>$
+            $<(push (concat " " "🗟" (page "./spotify.html" "Spotify Playlist")))>$
+            $<(push (concat " " "🗟" (page "./books.html" "Reading list" )))>$
+            $<(push (concat " " "🗟" (page "https://en.wikipedia.org/wiki/Plagiarism" "My stuff")))>$
+            $<(map li)>$
+            --->
+         <p>
             Pages :
         </p>
-        <ul>
-            $<(li (concat " " "*" (page "./writing.html" "My writing")))>$
-            $<(li (concat " " "*" (page "./articles.html" "Other's writing")))>$
-            $<(li (concat " " "*" (page "./books.html" "Reading list" )))>$
-            $<(li (concat " " "*" (page "https://github.com/0x3444ac53/Not-Important" "this site") "on github"))>$
-            $<(li (concat " " "*" (page "https://github.com/0x3444ac53/HCSL" "a dsl") "called 'slisp' that I created to template this site"))>$
-        </ul>
+            $<(ul (concat "\n"))>$
+        </br> 
+            <!---
+            $<(push (concat " " "" (page "https://github.com/0x3444ac53/Not-Important" "this site") "on github"))>$
+            $<(push (concat " " "" (page "https://github.com/0x3444ac53/HCSL" "a dsl") "called 'slisp' that I created to template this site"))>$
+            $<(map li)>$
+            --->
+        <p>
+            Other Links :
+            $<(ul (concat "\n"))>$
+        </p>
         </br>
+             <!---
+            $<(push (concat " " "" (atag (instagram) social instagram)))>$
+            $<(push (concat " " "" (atag (github) social github)))>$
+            $<(map li)>$
+            --->
         <p>
             Social :
         </p>
-        <ul>
-            $<(li (concat " " "*" (atag (github) social github)))>$
-            $<(li (concat " " "*" (atag (instagram) social instagram)))>$
-        </ul>
+            $<(ul (concat "\n"))>$
         </br>
-        <p>Acknowledgements</p>
-        <ul>
-            $<(li (concat " " "*" "This site was <em>initially</em> created by forking" (atag "https://catgirl.sh" "acknowledge" "catgirl.sh") "by" (atag "https://github.com/turquoise-hexagon" "acknowledge" "Camille") "which was created using bash as a 'templating system'"))>$
-            $<(li (concat " " "*" "Colourscheme is" (scheme) "by" (author)))>$
-        </ul>
+         <!---
+            $<(push (concat " " "" "Colourscheme is" (scheme) "by" (author)))>$
+            $<(push (concat " " "" "This site takes inspiration from" (atag "https://catgirl.sh" "acknowledge" "catgirl.sh") "by" (atag "https://github.com/turquoise-hexagon" "acknowledge" "Camille")))>$
+            $<(map li)>$
+            --->
+        <p>Acknowledgements :</p>
+        $<(ul (concat "\n"))>$
         </body>
 </html>

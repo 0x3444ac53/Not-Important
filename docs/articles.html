@@ -1,17 +1,37 @@
 <meta charset="utf-8"/>
 <!---
-define some names
-function_def=['internetprincess', ['artist', ['https://internetprincess.substack.com/', 'internet princess']]]
-function_def=['foldingideas', ['artist', ['https://www.youtube.com/FoldingIdeas', 'Folding Ideas']]]
-function_def=['andrea', ['artist', ['https://www.andrealongchu.com/', 'Andrea Long Chu']]]
+define some functions
+function_def=['addarticle', ['li', [['concat', [' ', '⎘', ['art', ['{0}', '{1}']], '{2}', ['artist', ['{3}', '{4}']]]]]]]
+function_def=['addvideo', ['li', [['concat', [' ', '𐦞', ['art', ['{0}', '{1}']], '{2}', ['artist', ['{3}', '{4}']]]]]]]
+function_def=['addpodcast', ['li', [['concat', [' ', '⋎', ['art', ['{0}', '{1}']], '{2}', ['artist', ['{3}', '{4}']]]]]]]
+function_def=['addcomment', ['ulnested', [['li', ['{0}']]]]]
+
 
 add some articles
-pushed  * <a href='https://internetprincess.substack.com/p/no-good-alone' class='article'>No good Alone</a> by <a href='https://internetprincess.substack.com/' class='bloglink'>internet princess</a>
-pushed  * <a href='https://internetprincess.substack.com/p/standing-on-the-shoulders-of-complex' class='article'>standing on the shoulders of complex female characters</a> by <a href='https://internetprincess.substack.com/' class='bloglink'>internet princess</a>
-pushed  * <a href='https://www.youtube.com/watch?v=YQ_xWvX1n9g' class='article'>Line Goes Up</a> by <a href='https://www.youtube.com/FoldingIdeas' class='bloglink'>Folding Ideas</a>
-pushed  * <a href='https://www.nplusonemag.com/issue-30/essays/on-liking-women/' class='article'>On liking Women</a> by <a href='https://www.andrealongchu.com/' class='bloglink'>Andrea Long Chu</a>
-and then
-
+pushed <ul class='lbracket'>
+<li>Isn't it weird how cutting off all your 'toxic' friends and muttering 'I repent nothing' into the mirror every morning is quite a lonely existence despite being the recommended remedy for productivity killing unhappiness?</li>
+</ul>
+pushed <li> ⎘ <a href='https://internetprincess.substack.com/p/no-good-alone' class='article'>No good Alone</a> by <a href='https://internetprincess.substack.com/' class='bloglink'>internet princess</a></li>
+pushed <ul class='lbracket'>
+<li>The Tagline, 'am i in my fleabag era or is my fleabag era in me?' is a better summation than I could ever offer</li>
+</ul>
+pushed <li> ⎘ <a href='https://internetprincess.substack.com/p/standing-on-the-shoulders-of-complex' class='article'>standing on the shoulders of complex female characters</a> by <a href='https://internetprincess.substack.com/' class='bloglink'>internetprincess</a></li>
+pushed <ul class='lbracket'>
+<li>Dan Olson deconstructs the narratives surrounding both the technological and financial aspects of Cryptocurrency and NFTs.</li>
+</ul>
+pushed <li> 𐦞 <a href='https://www.youtube.com/watch?v=YQ_xWvX1n9g' class='article'>Line Goes Up</a> by <a href='https://www.youtube.com/FoldingIdeas' class='bloglink'>Folding Ideas</a></li>
+pushed <ul class='lbracket'>
+<li>The Scum Manifesto is actually not that terfy</li>
+</ul>
+pushed <li> ⎘ <a href='https://www.nplusonemag.com/issue-30/essays/on-liking-women/' class='article'>On liking Women</a> by <a href='https://www.andrealongchu.com/' class='bloglink'>Andrea Long Chu</a></li>
+pushed <ul class='lbracket'>
+<li> Chat GPT is not a 'stepping stone to AGI' and labour exploitation is a more pressing concern than a <a href='https://www.decisionproblem.com/paperclips/' class='article'>'paperclip'</a> scenario. Anyone trying to convince you to focus on that rather than all of copyright violations is not 'more aware' of AI than you, they're just better at marketing</li>
+</ul>
+pushed <li> ⋎ <a href='https://www.youtube.com/watch?v=jAHRbFetqII' class='article'>A.I. and Stochastic Parrots</a> on <a href='https://link.chtbl.com/nD2_iAuV' class='bloglink'>FACTUALLY</a></li>
+pushed <ul class='lbracket'>
+<li>published at the height of covid, it explores the obsessive need to engage with relatable fiction</li>
+</ul>
+pushed <li> 𐦞 <a href='https://www.youtube.com/watch?v=ZsSzrVhdVuw' class='article'>I can't stop watching Contagion</a> by <a href='https://www.youtube.com/FoldingIdeas' class='bloglink'>FoldingIdeas</a></li>
 ---!>
 <html>
     <meta name="viewport"  content="width=device-width">
@@ -25,13 +45,33 @@ and then
     <body>
     <pre>
        <img src='src/imgs/squid.png' alt='' width='120px' height='auto'>
-       <h2>Articles I make all my friends read</h2>
     </pre>
+    <h2>Articles, Videos and Podcast I want to show people</h2>
     <ul>
-<li> * <a href='https://www.nplusonemag.com/issue-30/essays/on-liking-women/' class='article'>On liking Women</a> by <a href='https://www.andrealongchu.com/' class='bloglink'>Andrea Long Chu</a></li>
-<li> * <a href='https://www.youtube.com/watch?v=YQ_xWvX1n9g' class='article'>Line Goes Up</a> by <a href='https://www.youtube.com/FoldingIdeas' class='bloglink'>Folding Ideas</a></li>
-<li> * <a href='https://internetprincess.substack.com/p/standing-on-the-shoulders-of-complex' class='article'>standing on the shoulders of complex female characters</a> by <a href='https://internetprincess.substack.com/' class='bloglink'>internet princess</a></li>
-<li> * <a href='https://internetprincess.substack.com/p/no-good-alone' class='article'>No good Alone</a> by <a href='https://internetprincess.substack.com/' class='bloglink'>internet princess</a></li>
+<li> 𐦞 <a href='https://www.youtube.com/watch?v=ZsSzrVhdVuw' class='article'>I can't stop watching Contagion</a> by <a href='https://www.youtube.com/FoldingIdeas' class='bloglink'>FoldingIdeas</a></li>
+<ul class='lbracket'>
+<li>published at the height of covid, it explores the obsessive need to engage with relatable fiction</li>
+</ul>
+<li> ⋎ <a href='https://www.youtube.com/watch?v=jAHRbFetqII' class='article'>A.I. and Stochastic Parrots</a> on <a href='https://link.chtbl.com/nD2_iAuV' class='bloglink'>FACTUALLY</a></li>
+<ul class='lbracket'>
+<li> Chat GPT is not a 'stepping stone to AGI' and labour exploitation is a more pressing concern than a <a href='https://www.decisionproblem.com/paperclips/' class='article'>'paperclip'</a> scenario. Anyone trying to convince you to focus on that rather than all of copyright violations is not 'more aware' of AI than you, they're just better at marketing</li>
+</ul>
+<li> ⎘ <a href='https://www.nplusonemag.com/issue-30/essays/on-liking-women/' class='article'>On liking Women</a> by <a href='https://www.andrealongchu.com/' class='bloglink'>Andrea Long Chu</a></li>
+<ul class='lbracket'>
+<li>The Scum Manifesto is actually not that terfy</li>
+</ul>
+<li> 𐦞 <a href='https://www.youtube.com/watch?v=YQ_xWvX1n9g' class='article'>Line Goes Up</a> by <a href='https://www.youtube.com/FoldingIdeas' class='bloglink'>Folding Ideas</a></li>
+<ul class='lbracket'>
+<li>Dan Olson deconstructs the narratives surrounding both the technological and financial aspects of Cryptocurrency and NFTs.</li>
+</ul>
+<li> ⎘ <a href='https://internetprincess.substack.com/p/standing-on-the-shoulders-of-complex' class='article'>standing on the shoulders of complex female characters</a> by <a href='https://internetprincess.substack.com/' class='bloglink'>internetprincess</a></li>
+<ul class='lbracket'>
+<li>The Tagline, 'am i in my fleabag era or is my fleabag era in me?' is a better summation than I could ever offer</li>
+</ul>
+<li> ⎘ <a href='https://internetprincess.substack.com/p/no-good-alone' class='article'>No good Alone</a> by <a href='https://internetprincess.substack.com/' class='bloglink'>internet princess</a></li>
+<ul class='lbracket'>
+<li>Isn't it weird how cutting off all your 'toxic' friends and muttering 'I repent nothing' into the mirror every morning is quite a lonely existence despite being the recommended remedy for productivity killing unhappiness?</li>
+</ul>
 </ul>
     </body>
 </html>

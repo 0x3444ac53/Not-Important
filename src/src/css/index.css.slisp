@@ -1,16 +1,56 @@
 @font-face {
-    font-family: Handjet;
+    font-family: HandWriting;
+    src: url("../fonts/Caveat-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Main;
     src: url("../fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: MonoItalics;
+    src: url("../fonts/VictorMono-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+
 * {
-    font-family: Handjet;
+    font-family: Main;
     font-size: 32px;
     filter: contrast(1);
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: MonoItalics;
+    color: $<(base04)>$
+}
+
+.bracket {
+  display: inline-block;
+  width: 20px;
+  height: 400px;
+  border-top: 4px solid $<(base06)>$;
+  border-bottom: 4px solid $<(base06)>$;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+iframe.spotify {
+  transform: translate(0, -10px);
+  width: 85%;
+}
+
+.lbracket {
+  border-left: 3px solid $<(base06)>$;
+  margin-right: 6px;
+}
+
+.rbracket {
+  border-right: 3px solid $<(base06)>$;
+  margin-left: 6px
+}
 body {
     background-color: $<(base01)>$;
     color: $<(base06)>$;
@@ -24,15 +64,28 @@ ul {
     $<(margin 0 4 0 4)>$;
 }
 
+ul.lbracket {
+  margin-left: 10px;
+}
+
+ul.lbracket li {
+  margin: 0ch 4ch 0ch 4ch;
+  color: $<(base08)>$;
+  font-family: HandWriting;
+}
+
 pre { $<(margin 2 2 1 2)>$; }
 
 p   { 
-    $<(margin 0 2 0 2)>; 
+    $<(margin 0 2 0 2)>$; 
     width: 60ch;
     max-width: 100%;
 }
 
-a { text-decoration: none; }
+a { 
+    text-decoration: none; 
+    font-family: inherit;
+    }
 
 a.social { color: $<(base0E)>$; }
 a.pages  { color: $<(base05)>$; }
