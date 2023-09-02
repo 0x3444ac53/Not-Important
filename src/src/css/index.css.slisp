@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: HandWritingTwo;
+    src: url("../fonts/ShadowsIntoLight-Regular.ttf") format("truetype");
+}
+
+@font-face {
     font-family: Main;
     src: url("../fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf") format("truetype");
 }
@@ -40,6 +45,34 @@ h1, h2, h3, h4, h5, h6 {
 iframe.spotify {
   transform: translate(0, -10px);
   width: 85%;
+}
+
+dialog {
+   background-color: $<(base00)>$;
+   color: $<(base05)>$;
+   border-color: $<(baseOF)>$;
+   justify-content: center;
+}
+
+dialog p {
+    font-family: "HandWriting";
+}
+
+dialog p a, dialog form button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+dialog form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+dialog form button {
+    font-family: "HandWritingTwo";
+    background-color: $<(base05)>$;
+    color: $<(base00)>$;
+    font-size: 22px;
 }
 
 .lbracket {
@@ -92,6 +125,7 @@ a.pages  { color: $<(base05)>$; }
 a.acknowledge { color: $<(base0D)>$; }
 a.article { color:$<(base0D)>$ }
 a.bloglink { color:$<(base0E)>$ }
+a.normal { color:inherit }
 
 a:hover {
     text-decoration: underline 2px;

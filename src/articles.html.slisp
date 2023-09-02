@@ -1,9 +1,9 @@
 <meta charset="utf-8"/>
 <!---
 define some functions
-$<(func addarticle (li (concat " " "⎘" (art "{0}" "{1}") "{2}" (artist "{3}" "{4}"))))>$
-$<(func addvideo (li (concat " " "𐦞" (art "{0}" "{1}") "{2}" (artist "{3}" "{4}") )))>$
-$<(func addpodcast (li (concat " " "⋎" (art "{0}" "{1}") "{2}" (artist "{3}" "{4}") )))>$
+$<(func addarticle (li (concat " " (icon "fa-pen-nib") (art "{0}" "{1}") "{2}" (artist "{3}" "{4}"))))>$
+$<(func addvideo (li (concat " " (icon "fa-video") (art "{0}" "{1}") "{2}" (artist "{3}" "{4}") )))>$
+$<(func addpodcast (li (concat " " (icon "fa-podcast") (art "{0}" "{1}") "{2}" (artist "{3}" "{4}") )))>$
 $<(func addcomment (ulnested (li "{0}")))>$
 
 
@@ -25,6 +25,7 @@ $<(push (addvideo "https://www.youtube.com/watch?v=ZsSzrVhdVuw" "I can't stop wa
     <meta name="viewport"  content="width=device-width">
     $<(headerlink "stylesheet" "text/css"  "src/css/index.css")>$
     $<(headerlink "icon"       "image/jpg" "src/imgs/icon.jpg")>$
+        <script src="https://kit.fontawesome.com/4806c69909.js" crossorigin="anonymous"></script>
     <head>
         <title>
         $<(concat " " (name) "- articles">$

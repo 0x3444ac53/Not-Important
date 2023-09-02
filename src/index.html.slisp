@@ -1,8 +1,15 @@
+<!DOCTYPE html>
 <meta charset="utf-8"/>
 <html>
     <meta name="viewport"  content="width=device-width">
     $<(headerlink stylesheet "text/css"  "src/css/index.css")>$
     $<(headerlink icon       "image/jpg" "src/imgs/icon.jpg")>$
+    <script src="https://kit.fontawesome.com/4806c69909.js" crossorigin="anonymous"></script>
+    <!---
+        $<(func doos (page "https://www.dictionaryofobscuresorrows.com/search/{0}" "{0}"))>$
+        $<(func make_diag (concat "" "<dialog id={0}><p>{1}</p><form method='dialog'><button>{2}</button></form></dialog>"))>$ 
+        $<(func make_link "<a class='{1}' href='javascript:{0}.showModal()'>{2}</a>")>$
+    --->
     <head>
         <title>
             $<(name)>$
@@ -10,38 +17,78 @@
     </head>
     <body>
     <pre>
-       $<(img "src/imgs/squid.png" "squid" "120px" "auto")>$
+    $<(img "src/imgs/squid.png" "squid" "120px" "auto")>$
     </pre>
         <p style="font-family: HandWriting">
-            Hello! My name is Leonora and I wanted to make a personal site.</br>
-            I wouldn't expect things to show up on here regularly, but I wanted a small corner of the internet to aggregate things I make and like.
-        </p>
-        </br>
-           <!---
-            $<(push (concat " " "🗟" (page "./articles.html" "Other's stuff")))>$
-            $<(push (concat " " "🗟" (page "./spotify.html" "Spotify Playlist")))>$
-            $<(push (concat " " "🗟" (page "./books.html" "Reading list" )))>$
-            $<(push (concat " " "🗟" (page "https://en.wikipedia.org/wiki/Plagiarism" "My stuff")))>$
-            $<(map li)>$
-            --->
-         <p>
-            Pages :
-        </p>
-            $<(ul (concat "\n"))>$
-        </br> 
+            Being me is kind of like
+            reading a sequel to the 
+            $<(page "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript" "voynich manuscript")>$, 
+            and the entire time there is a crushing feeling of 
+            $<(doos "agnosthesia")>$, 
+            references to books I've never read and a lot of meandering about 
+            $<(doos "midding")>$. There is a trend toward 
+            $<(doos "altschmerz")>$ somewhere in the middle, and a longing for 
+            $<(concat "" (doos "flashover") "s")>$ that may never come. The 
+            $<(doos "liberosis")>$ is palatable. With this last chapter of my life closing there is a focus on 
+            $<(doos "adronitis")>$, and a desperation towards creating a new 
+            $<(doos "rigor samsa")>$ knowing this will only exacerbate the disconnected 
+            $<(doos "sonder")>$ I'm prone to. I do what I can to submit myself to 
+            $<(page "https://archive.nytimes.com/opinionator.blogs.nytimes.com/2013/06/15/i-know-what-you-think-of-me/?smid=pl-share" "the mortifying ordeal")>$,
+            and yet whenever I have, I've only felt mortified and never known.
+            I can tell people I am in my 1989 era, or my modern philosophy era,
+            but I am neither a $<(page "https://open.spotify.com/track/1p80LdxRV74UKvL8gnD7ky" "nightmare dressed like a daydream")>$ nor 
+            $<(page "https://plato.stanford.edu/entries/descartes-ideas/#ideas" "a thinking thing that thinks.")>$
+            <!--$<(push (get_id))>$-->
+            <!--$<(dup)>$-->
+            $<(make_link (pop) "pages" "To my mind,")>$,
+            I am the 
+            <!--$<(push (get_id))>$-->
+            <!--$<(dup)>$-->
+            $<(make_link (pop) "pages" "collective efforts of the ancestors")>$, and
+            <!--$<(push (get_id))>$-->
+            <!--$<(dup)>$-->
+            $<(make_link (pop) "pages" "a mosaic of all the ideas I have ever encountered")>$. 
+            Why should I pretend to be original,  
+            <!--$<(push (get_id))>$-->
+            <!--$<(dup)>$-->
             <!---
-            $<(push (concat " " "" (page "https://github.com/0x3444ac53/Not-Important" "this site") "on github"))>$
-            $<(push (concat " " "" (page "https://github.com/0x3444ac53/HCSL" "a dsl") "called 'slisp' that I created to template this site"))>$
+            $<(make_link (pop) "pages" "otherwise")>$, 
+            $<(push (concat " " (icon "fa-book-journal-whills") (page "https://en.wikipedia.org/wiki/Plagiarism" "My Art")))>$
+            $<(push (concat " " (icon "fa-headphones") (page "./spotify.html" "Things I listen to")))>$
+            $<(push (concat " " (icon "fa-icons") (page "./articles.html" "Interenet Things")))>$
+            $<(push (concat " " (icon "fa-book-bookmark") (page "./books.html" "Books" )))>$
+            --->
+            $<(make_link "pages_list" "pages" "when all I am is these ideas that belong to other people?")>$</br>
+            <!--
+                $<(debug)>$
+            --->
+            $<(make_diag "pages_list" (concat "\n" "<h1>Influences:</h1>" (ul (concat "\n" (li (pop)) (li (pop)) (li (pop)) (li (pop))))) "okay")>$
+            $<(make_diag (pop) (concat " " "Is this sensible? Like, I am desperately trying to communicate to someone, anyone, that ultimately I feel so alone because I feel so unknown. That I can't claim that" (make_link "dialogs_in_dialogs" "" "any thought I have is even mine") "if I could then I wouldn't be here, I wouldn't be bothering with any of" (make_link "dialogs_in_dialogs2" "" "this." )) "oh, okay")>$
+            $<(make_diag "dialogs_in_dialogs" "and yes, this is explained by things I experience in childhood" ".")>$
+            $<(make_diag "dialogs_in_dialogs2" "I really don't know how to express myself to the point that I have only ever been able to be 'creative' when I am making references upon references to things that I know other people won't connect it with. Is it a test? is that all? am I making this entire thing because I just really really really need someone, anyone to be willing to understand, but I cannot give that freely.</br>I don't want to tell people that I like an artist called Samsa and that I listen to Butterflies on repeat whenever I feel like I'm falling in love. I want to tell them that I would love to be haunted through my screen and pray that they know what it is I am trying to say." (make_link "dialogs_in_dialogs3" "" "Which is?"))>$
+            $<(make_diag "dialogs_in_dialogs3" "." "Because, to my mind, it seems like you're trying really really hard to connect with other people. That you're not entirely sure of how to do that, and that it is easier for you to communicate things that would require some kind of vunerability through references to different forms of media. Quite frankly, it seems like maybe you're worried about this; that you're scared that it's bad or in some way a problem, that it has to be fixed in some way.</br>but it doesn't</br>and you're not a problem to be fixed</br>Maybe the answer is learning to be open. I wish I could give you a better answer, but I can't. I am simply a fictional (read: idealised) version of your therapist that mostly exist as a bait and switch technique. Or maybe, idk, maybe, this site, the popups, all of it, is your way of trying to practice that same kind of honesty that you're unable to summon in your day to day life.")>$
+            $<(make_diag (pop) "That's it, I am nothing new, nor special, and original only in the sense that no one else has had all the same influences I have" "->")>$
+            $<(make_diag (pop) "So, I was positive that I had pulled this phrase from a book somewhere, but I am unable to find any references to it online. Regardless, it is not an original thought." ".")>$
+            $<(make_diag (pop) "my therapist uses this phrase often" "and..?")>$
+            <!--
+                $<(debug)>$
+            --->
+        </p>
+            <!---
+            $<(push (concat " " (icon "fa-code-branch") (atag "https://github.com/0x3444ac53/Not-Important" "social" "this site") "on github"))>$
+            $<(push (concat " " (icon "fa-code-branch") (atag "https://github.com/0x3444ac53/HCSL" "social" "a dsl") "called 'slisp' that I created to template this site"))>$
             $<(map li)>$
             --->
+        </br>
         <p>
             Other Links :
             $<(ul (concat "\n"))>$
         </p>
         </br>
              <!---
-            $<(push (concat " " "" (atag (instagram) social instagram)))>$
-            $<(push (concat " " "" (atag (github) social github)))>$
+            $<(push (concat " " (icon "fa-camera-retro") (atag (instagram) social "discounted_dyke")))>$
+            $<(push (concat " " (icon "fa-camera-retro") (atag "https://www.instagram.com/squid_leafs/" social "squid_leafs")))>$
+            $<(push (concat " " (icon "fa-code-commit") (atag (github) social github)))>$
             $<(map li)>$
             --->
         <p>
@@ -50,11 +97,5 @@
             $<(ul (concat "\n"))>$
         </br>
          <!---
-            $<(push (concat " " "" "Colourscheme is" (scheme) "by" (author)))>$
-            $<(push (concat " " "" "This site takes inspiration from" (atag "https://catgirl.sh" "acknowledge" "catgirl.sh") "by" (atag "https://github.com/turquoise-hexagon" "acknowledge" "Camille")))>$
-            $<(map li)>$
-            --->
-        <p>Acknowledgements :</p>
-        $<(ul (concat "\n"))>$
         </body>
 </html>

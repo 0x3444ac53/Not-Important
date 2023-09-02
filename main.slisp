@@ -1,12 +1,16 @@
 ; dirs containing template files
 (func srcdir "./src")
 (func outdir "./docs")
+
 ; vars
 (func name "Nora's Website")
 (func github "https://github.com/0x3444ac53")
 (func instagram "https://www.instagram.com/discounted_dyke")
+(func getchar (concat " " "python3" "-c" (shell_quote "print(chr(int({0})), end='')")))
+(func dq (execute (getchar "34")))
+(func get_id (execute (concat " " "python3 -c" (shell_quote "import random, string;print(''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase) for _ in range(6)), end='')"))))
 ; functions for templating 
-(func atag "<a href='{0}' class='{1}'>{2}</a>")
+(func atag "<a href='{0}' target='_blank' class='{1}'>{2}</a>")
 (func page (atag {0} "pages" {1}))
 (func art (atag "{0}" "article" "{1}"))
 (func artist (atag "{0}" "bloglink" "{1}"))
@@ -16,9 +20,10 @@
 (func headerlink "<link rel='{0}' type='{1}' href='{2}'>")
 (func img "<img src='{0}' alt='{1}' width='{2}' height='{3}'>")
 (func margin "margin: {0}ch {1}ch {2}ch {3}ch")
+(func icon "<i style=color:inherit class='fa-solid {0}'></i>")
 
 ;setting colorscheme
-(func colorscheme "/home/ellie/repos/base16-schemes/zenburn.yaml")
+(func colorscheme "/home/ellie/repos/base16-schemes/ashes.yaml")
 (push "'.strip())).items())]")
 (push (colorscheme))
 (push "yaml.load(open('")
@@ -44,6 +49,9 @@
 (execute (concat " " "python3 -c " (shell_quote (pop)) " > colours.slisp"))
 (source "colours.slisp")
 (execute "rm colours.slisp")
+
 ;debugging 
 (debug)
+
+;template
 (template (srcdir) (outdir))
