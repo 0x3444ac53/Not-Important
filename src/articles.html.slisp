@@ -20,6 +20,8 @@ $<(push (addcomment (concat " " "Chat GPT is not a 'stepping stone to AGI' and l
 $<(push (addpodcast "https://www.youtube.com/watch?v=jAHRbFetqII" "A.I. and Stochastic Parrots" "on" "https://link.chtbl.com/nD2_iAuV" "FACTUALLY" ))>$
 $<(push (addcomment "published at the height of covid, it explores the obsessive need to engage with relatable fiction"))>$
 $<(push (addvideo "https://www.youtube.com/watch?v=ZsSzrVhdVuw" "I can't stop watching Contagion" "by" "https://www.youtube.com/FoldingIdeas" "FoldingIdeas"))>$
+$<(push (addcomment "It is rare that I find something on the internet that so perfectly captures the alienation of non-passing and closeted trans women. The rareness of such a thing is a product of the same frustration that the writer expresses here; How are we meant to feel safe, or included, when the spaces that are nominally 'ours' are often so hostile to 'maleness' that we are meant to ignore and discard our lived experience in order to feel welcome?"))>$
+$<(push (addarticle "https://medium.com/@jencoates/i-am-a-transwoman-i-am-in-the-closet-i-am-not-coming-out-4c2dd1907e42" "I Am A Transwoman. I Am In The Closet. I Am Not Coming Out." "by" "https://en.wikipedia.org/wiki/Anonymity" "Jennifer Coats"))>$
 ---!>
 <html>
     <meta name="viewport"  content="width=device-width">
