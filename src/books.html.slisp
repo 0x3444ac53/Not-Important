@@ -6,6 +6,8 @@
     <title>
     $<(name)>$
     </title>
+    </head>
+    <pre>$<(preimg)>$</pre>
     <body>
     $<(execute "python3 Books.py | ~/.luarocks/bin/djot")>$
     </body>

@@ -36,7 +36,7 @@ $<(push (spotify "7bO0Zs0Sg1BZVp8XTGAyGi"))>$
     </head>
     <body>
     <pre>
-       $<(img "src/imgs/squid.png" "" "120px" "auto")>$
+       $<(preimg)>$
     </pre>
     <h3>I make a spotify playlist (almost) every month</h3>
     $<( ul (concat "\n"))>$

@@ -33,7 +33,7 @@ $<(push (addvideo "https://www.youtube.com/watch?v=ZsSzrVhdVuw" "I can't stop wa
     </head>
     <body>
     <pre>
-       $<(img "src/imgs/squid.png" "" "120px" "auto")>$
+       $<(preimg)>$
     </pre>
     <h2>Articles, Videos and Podcast I want to show people</h2>
     $<(ul (concat "\n"))>$
