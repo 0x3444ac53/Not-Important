@@ -17,7 +17,7 @@
     </head>
     <body>
     <pre>
-    $<(img "src/imgs/squid.png" "squid" "120px" "auto")>$
+    $<(preimg)>$
     </pre>
         <p style="font-family: HandWriting">
             Being me is kind of like
@@ -48,11 +48,11 @@
             <!--$<(push (get_id))>$-->
             <!--$<(dup)>$-->
             $<(make_link (pop) "pages" "a mosaic of all the ideas I have ever encountered")>$. 
-            Why should I pretend to be original,  
+            Why should I pretend to be  
             <!--$<(push (get_id))>$-->
             <!--$<(dup)>$-->
+            $<(make_link (pop) "pages" "original")>$, 
             <!---
-            $<(make_link (pop) "pages" "otherwise")>$, 
             $<(push (concat " " (icon "fa-book-journal-whills") (page "https://en.wikipedia.org/wiki/Plagiarism" "My Art")))>$
             $<(push (concat " " (icon "fa-headphones") (page "./spotify.html" "Things I listen to")))>$
             $<(push (concat " " (icon "fa-icons") (page "./articles.html" "Interenet Things")))>$
@@ -66,7 +66,7 @@
             $<(make_diag (pop) (concat " " "Is this sensible? Like, I am desperately trying to communicate to someone, anyone, that ultimately I feel so alone because I feel so unknown. That I can't claim that" (make_link "dialogs_in_dialogs" "" "any thought I have is even mine") "if I could then I wouldn't be here, I wouldn't be bothering with any of" (make_link "dialogs_in_dialogs2" "" "this." )) "oh, okay")>$
             $<(make_diag "dialogs_in_dialogs" "and yes, this is explained by things I experience in childhood" ".")>$
             $<(make_diag "dialogs_in_dialogs2" "I really don't know how to express myself to the point that I have only ever been able to be 'creative' when I am making references upon references to things that I know other people won't connect it with. Is it a test? is that all? am I making this entire thing because I just really really really need someone, anyone to be willing to understand, but I cannot give that freely.</br>I don't want to tell people that I like an artist called Samsa and that I listen to Butterflies on repeat whenever I feel like I'm falling in love. I want to tell them that I would love to be haunted through my screen and pray that they know what it is I am trying to say." (make_link "dialogs_in_dialogs3" "" "Which is?"))>$
-            $<(make_diag "dialogs_in_dialogs3" "." "Because, to my mind, it seems like you're trying really really hard to connect with other people. That you're not entirely sure of how to do that, and that it is easier for you to communicate things that would require some kind of vunerability through references to different forms of media. Quite frankly, it seems like maybe you're worried about this; that you're scared that it's bad or in some way a problem, that it has to be fixed in some way.</br>but it doesn't</br>and you're not a problem to be fixed</br>Maybe the answer is learning to be open. I wish I could give you a better answer, but I can't. I am simply a fictional (read: idealised) version of your therapist that mostly exist as a bait and switch technique. Or maybe, idk, maybe, this site, the popups, all of it, is your way of trying to practice that same kind of honesty that you're unable to summon in your day to day life.")>$
+            $<(make_diag "dialogs_in_dialogs3" "I don't know" "To my mind, it seems like you're trying really really hard to connect with other people. That you're not entirely sure of how to do that, and that it is easier for you to communicate things that would require some kind of vunerability through references to different forms of media. Quite frankly, it seems like maybe you're worried about this; that you're scared that it's bad or in some way a problem, that it has to be fixed in some way.</br>but it doesn't</br>and you're not a problem to be fixed</br>Maybe the answer is learning to be open. I wish I could give you a better answer, but I can't. I am simply a fictional (read: idealised) version of your therapist that mostly exist as a bait and switch technique. Or maybe, idk, maybe, this site, the popups, all of it, is your way of trying to practice that same kind of honesty that you're unable to summon in your day to day life.")>$
             $<(make_diag (pop) "That's it, I am nothing new, nor special, and original only in the sense that no one else has had all the same influences I have" "->")>$
             $<(make_diag (pop) "So, I was positive that I had pulled this phrase from a book somewhere, but I am unable to find any references to it online. Regardless, it is not an original thought." ".")>$
             $<(make_diag (pop) "my therapist uses this phrase often" "and..?")>$

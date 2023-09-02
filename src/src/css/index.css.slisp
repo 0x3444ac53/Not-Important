@@ -47,6 +47,10 @@ iframe.spotify {
   width: 85%;
 }
 
+#dialogs_in_dialogs3 button {
+    text-align: left;
+}
+
 dialog {
    background-color: $<(base00)>$;
    color: $<(base05)>$;
@@ -73,6 +77,7 @@ dialog form button {
     background-color: $<(base05)>$;
     color: $<(base00)>$;
     font-size: 22px;
+    max-width: 400px;
 }
 
 .lbracket {

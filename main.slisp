@@ -19,6 +19,7 @@
 (func ulnested "<ul class='lbracket'>\n{0}\n</ul>")
 (func headerlink "<link rel='{0}' type='{1}' href='{2}'>")
 (func img "<img src='{0}' alt='{1}' width='{2}' height='{3}'>")
+(func preimg (concat "" "<a href=/index.html>" (img "src/imgs/squid.png" "squid" "120px" "auto") "</a>"))
 (func margin "margin: {0}ch {1}ch {2}ch {3}ch")
 (func icon "<i style=color:inherit class='fa-solid {0}'></i>")
 
