@@ -29,15 +29,15 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: MonoItalics;
-    color: #ADB3BA
+    color: #aabcce
 }
 
 .bracket {
   display: inline-block;
   width: 20px;
   height: 400px;
-  border-top: 4px solid #DFE2E5;
-  border-bottom: 4px solid #DFE2E5;
+  border-top: 4px solid #e5ebf1;
+  border-bottom: 4px solid #e5ebf1;
   border-radius: 3px;
   margin-top: 10px;
 }
@@ -52,8 +52,8 @@ iframe.spotify {
 }
 
 dialog {
-   background-color: #1C2023;
-   color: #C7CCD1;
+   background-color: #0b1c2c;
+   color: #cbd6e2;
    border-color: baseOF baseOF;
    justify-content: center;
 }
@@ -74,24 +74,24 @@ dialog form {
 
 dialog form button {
     font-family: "HandWritingTwo";
-    background-color: #C7CCD1;
-    color: #1C2023;
+    background-color: #cbd6e2;
+    color: #0b1c2c;
     font-size: 22px;
     max-width: 400px;
 }
 
 .lbracket {
-  border-left: 3px solid #DFE2E5;
+  border-left: 3px solid #e5ebf1;
   margin-right: 6px;
 }
 
 .rbracket {
-  border-right: 3px solid #DFE2E5;
+  border-right: 3px solid #e5ebf1;
   margin-left: 6px
 }
 body {
-    background-color: #393F45;
-    color: #DFE2E5;
+    background-color: #223b54;
+    color: #e5ebf1;
     margin-bottom: 2ch;
 }
 
@@ -108,7 +108,7 @@ ul.lbracket {
 
 ul.lbracket li {
   margin: 0ch 4ch 0ch 4ch;
-  color: #C7AE95;
+  color: #bf8b56;
   font-family: HandWriting;
 }
 
@@ -125,16 +125,16 @@ a {
     font-family: inherit;
     }
 
-a.social { color: #C795AE; }
-a.pages  { color: #C7CCD1; }
-a.acknowledge { color: #AE95C7; }
-a.article { color:#AE95C7 }
-a.bloglink { color:#C795AE }
+a.social { color: #bf568b; }
+a.pages  { color: #cbd6e2; }
+a.acknowledge { color: #8b56bf; }
+a.article { color:#8b56bf }
+a.bloglink { color:#bf568b }
 a.normal { color:inherit }
 
 a:hover {
     text-decoration: underline 2px;
-    color: #F3F4F5;
+    color: #f7f9fb;
 }
 
 
@@ -142,16 +142,16 @@ table {
   margin-bottom: 2em;
   width: 50%; 
   margin-right: auto;
-  background-color: #393F45;
-  color: #ADB3BA;
+  background-color: #223b54;
+  color: #aabcce;
 }
 
 th {
   border-bottom: 2px solid #ccc;
   font-weight: bold;
   text-align: left; 
-  background-color: #393F45;  
-  color: #ADB3BA;
+  background-color: #223b54;  
+  color: #aabcce;
 }
 
 .emoji {
