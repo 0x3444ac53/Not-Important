@@ -80,6 +80,9 @@
         </p>
             $<(ul (concat "\n"))>$
         </br>
-         <!---
+            <!---
+            $<(push (execute (get_carbon_src "main.slisp")))>$
+            $<(carbon (pop))>$
+            --->
         </body>
 </html>

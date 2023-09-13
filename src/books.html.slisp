@@ -8,8 +8,7 @@
     </title>
     </head>
     <pre>$<(preimg)>$</pre>
-
     <body>
-    $<(execute "echo 'python3 Books.py | djot' | nix-shell -p djot-js --run zsh")>$
+    $<(execute (nix_shell_p "python3 Books.py | djot" "djot-js"))>$
     </body>
 </html>

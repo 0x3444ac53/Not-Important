@@ -9,6 +9,8 @@
 (func getchar (concat " " "python3" "-c" (shell_quote "print(chr(int({0})), end='')")))
 (func dq (execute (getchar "34")))
 (func get_id (execute (concat " " "python3 -c" (shell_quote "import random, string;print(''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase) for _ in range(6)), end='')"))))
+
+
 ; functions for templating 
 (func atag "<a href='{0}' target='_blank' class='{1}'>{2}</a>")
 (func page (atag {0} "pages" {1}))
@@ -22,7 +24,9 @@
 (func preimg (concat "" "<a href=/index.html>" (img "src/imgs/squid.png" "squid" "120px" "auto") "</a>"))
 (func margin "margin: {0}ch {1}ch {2}ch {3}ch")
 (func icon "<i style=color:inherit class='fa-solid {0}'></i>")
-
+(func nix_shell_p (concat " " "echo" (shell_quote {0}) "| nix-shell -p {1} --run zsh"))
+(func get_carbon_src (concat "" "python3 -c " (dq) "import urllib.parse; print(urllib.parse.quote(open('{0}').read()))" (dq)))
+(func carbon (concat "" "<iframe src=" (dq) "https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=monokai&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=" {0} (dq) " style=" (dq) "width: 800px; height: 400px; border:0; transform: scale(1); overflow:hidden;" (dq) " sandbox=" (dq) "allow-scripts allow-same-origin" (dq) "> </iframe>"))
 ;setting colorscheme
 (source "../base16-slisp/build/harmonic16-dark.slisp")
 
