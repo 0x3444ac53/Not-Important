@@ -1,30 +1,31 @@
 <!DOCTYPE html>
+include(`definitions.m4')
 <meta charset="utf-8"/>
 <html>
     <meta name="viewport"  content="width=device-width">
-    $<(headerlink stylesheet "text/css"  "src/css/index.css")>$
-    $<(headerlink icon       "image/jpg" "src/imgs/icon.jpg")>$
+    headerlink(stylesheet, "text/css",  "src/css/index.css")
+    headerlink(<<icon>>, "image/jpg" "src/imgs/icon.jpg")
     <script src="https://kit.fontawesome.com/4806c69909.js" crossorigin="anonymous"></script>
     <!---
-        $<(func doos (page "https://www.dictionaryofobscuresorrows.com/search/{0}" "{0}"))>$
-        $<(func make_diag (concat "" "<dialog id={0}><p>{1}</p><form method='dialog'><button>{2}</button></form></dialog>"))>$ 
-        $<(func make_link "<a class='{1}' href='javascript:{0}.showModal()'>{2}</a>")>$
+        define(doos, page(https://www.dictionaryofobscuresorrows.com/search/$1, $1))
+        define(make_diag, <dialog id=$1><p>$2</p><form method='dialog'><button>{3}</button></form></dialog>)
+        define(make_link, <a class='$2' href='javascript:$1.showModal()'>$3</a>)
     --->
     <head>
         <title>
-            $<(name)>$
+            name
         </title>
     </head>
     <body>
     <pre>
-    $<(preimg)>$
+        preimg
     </pre>
         <p style="font-family: HandWriting">
             Being me is kind of like
             reading a sequel to the 
-            $<(page "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript" "voynich manuscript")>$, 
+            page(https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript, voynich manuscript), 
             and the entire time there is a crushing feeling of 
-            $<(doos "agnosthesia")>$, 
+            doos(agnosthesia), 
             references to books I've never read and a lot of meandering about 
             $<(doos "midding")>$. There is a trend toward 
             $<(doos "altschmerz")>$ somewhere in the middle, and a longing for 
@@ -44,7 +45,7 @@
             a mosaic of all the ideas I have ever encountered. 
             Why should I pretend to be  original, 
             <!---
-            $<(push (concat " " (icon "fa-book-journal-whills") (page "https://en.wikipedia.org/wiki/Plagiarism" "My Art")))>$
+            $<(push (concat " " (icon "fa-book-journal-whills") (page "./me/things.html" "My Art")))>$
             $<(push (concat " " (icon "fa-headphones") (page "./spotify.html" "Things I listen to")))>$
             $<(push (concat " " (icon "fa-icons") (page "./articles.html" "Internet Things")))>$
             $<(push (concat " " (icon "fa-book-bookmark") (page "./books.html" "Books" )))>$

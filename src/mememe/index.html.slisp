@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+    <meta name="viewport"  content="width=device-width">
+    $<(headerlink stylesheet "text/css"  "/src/css/index.css")>$
+    $<(headerlink icon       "image/jpg" "/src/imgs/icon.jpg")>$
+    <script src="https://kit.fontawesome.com/4806c69909.js" crossorigin="anonymous"></script>
+    <head>
+        <title>
+            $<(name)>$
+        </title>
+    </head>
+    <body>
+    <pre>
+    $<(preimg)>$
+    </pre>
+    <!----
+    $<(func audio "<audio controls><source src='{0}'></audio>")>$
+    ---->
+    
+<div id="waveform">
+  <!-- the waveform will be rendered here -->
+</div>
+
+<script type="module">
+import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js'
+
+const wavesurfer = WaveSurfer.create({
+  container: '#waveform',
+  waveColor: '#4F4A85',
+  progressColor: '#383351',
+  url: 'audiofiles/PRS18092023.m4a',
+})
+
+wavesurfer.on('interaction', () => {
+  wavesurfer.play()
+})
+</script>

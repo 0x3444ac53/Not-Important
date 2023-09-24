@@ -8,20 +8,31 @@ $<(func addcomment (ulnested (li "{0}")))>$
 
 
 add some articles
+
 $<(push (addcomment "Isn't it weird how cutting off all your 'toxic' friends and muttering 'I repent nothing' into the mirror every morning is quite a lonely existence despite being the recommended remedy for productivity killing unhappiness?"))>$
 $<(push (addarticle "https://internetprincess.substack.com/p/no-good-alone" "No good Alone" "by" "https://internetprincess.substack.com/" "internet princess"))>$
+
 $<(push (addcomment "The Tagline, 'am i in my fleabag era or is my fleabag era in me?' is a better summation than I could ever offer"))>$
 $<(push (addarticle "https://internetprincess.substack.com/p/standing-on-the-shoulders-of-complex" "standing on the shoulders of complex female characters" "by" "https://internetprincess.substack.com/" "internetprincess"))>$
+
 $<(push (addcomment "Dan Olson deconstructs the narratives surrounding both the technological and financial aspects of Cryptocurrency and NFTs."))>$
 $<(push (addvideo "https://www.youtube.com/watch?v=YQ_xWvX1n9g" "Line Goes Up" "by" "https://www.youtube.com/FoldingIdeas" "Folding Ideas"))>$
+
 $<(push (addcomment "The Scum Manifesto is actually not that terfy"))>$
 $<(push (addarticle "https://www.nplusonemag.com/issue-30/essays/on-liking-women/" "On liking Women" "by" "https://www.andrealongchu.com/" "Andrea Long Chu"))>$
+
 $<(push (addcomment (concat " " "Chat GPT is not a 'stepping stone to AGI' and labour exploitation is a more pressing concern than a" (art "https://www.decisionproblem.com/paperclips/" "'paperclip'") "scenario." "Anyone trying to convince you to focus on that rather than all of copyright violations is not 'more aware' of AI than you, they're just better at marketing")))>$
 $<(push (addpodcast "https://www.youtube.com/watch?v=jAHRbFetqII" "A.I. and Stochastic Parrots" "on" "https://link.chtbl.com/nD2_iAuV" "FACTUALLY" ))>$
+
 $<(push (addcomment "published at the height of covid, it explores the obsessive need to engage with relatable fiction"))>$
 $<(push (addvideo "https://www.youtube.com/watch?v=ZsSzrVhdVuw" "I can't stop watching Contagion" "by" "https://www.youtube.com/FoldingIdeas" "FoldingIdeas"))>$
+
 $<(push (addcomment "It is rare that I find something on the internet that so perfectly captures the alienation of non-passing and closeted trans women. The rareness of such a thing is a product of the same frustration that the writer expresses here; How are we meant to feel safe, or included, when the spaces that are nominally 'ours' are often so hostile to 'maleness' that we are meant to ignore and discard our lived experience in order to feel welcome?"))>$
 $<(push (addarticle "https://medium.com/@jencoates/i-am-a-transwoman-i-am-in-the-closet-i-am-not-coming-out-4c2dd1907e42" "I Am A Transwoman. I Am In The Closet. I Am Not Coming Out." "by" "https://en.wikipedia.org/wiki/Anonymity" "Jennifer Coats"))>$
+
+$<(push (addcomment "VC firms no longer invest in technologies that solve problems (and arguably never did) and most of their money goes to some far flung 'future' that is dreamed up by eugenics advocates"))>$
+$<(push (addarticle "https://tante.cc/2023/09/21/the-age-of-the-grift-shift/" "The Age of the Grift Shift" "by" "https://tante.cc/contact/" "tante"))>$
+
 ---!>
 <html>
     <meta name="viewport"  content="width=device-width">
