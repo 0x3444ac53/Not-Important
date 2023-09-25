@@ -1,6 +1,6 @@
 @font-face {
     font-family: HandWriting;
-    src: url("../fonts/Caveat-VariableFont_wght.ttf") format("truetype");
+    src: url("../fonts/Nora.otf") format("opentype");
 }
 
 @font-face {

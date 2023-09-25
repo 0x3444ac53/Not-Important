@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+    <meta name="viewport"  content="width=device-width">
+    <link rel='stylesheet' type='text/css' href='/src/css/index.css'>
+    <link rel='icon' type='image/jpg' href='/src/imgs/icon.jpg'>
+    <script src="https://kit.fontawesome.com/4806c69909.js" crossorigin="anonymous"></script>
+    <head>
+        <title>
+            Nora's Website
+        </title>
+    </head>
+    <body>
+    <pre>
+    <a href=/index.html><img src='/src/imgs/squid.png' alt='squid' width='120px' height='auto'></a>
+    </pre>
+    <!----
+    function_def=['audio', "<audio controls><source src='{0}'></audio>"]
+    ---->
+    
+<div id="waveform">
+  <!-- the waveform will be rendered here -->
+</div>
+
+<script type="module">
+import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js'
+
+const wavesurfer = WaveSurfer.create({
+  container: '#waveform',
+  waveColor: '#4F4A85',
+  progressColor: '#383351',
+  url: 'audiofiles/PRS18092023.m4a',
+})
+
+wavesurfer.on('interaction', () => {
+  wavesurfer.play()
+})
+</script>
