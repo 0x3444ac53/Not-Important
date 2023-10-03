@@ -1,0 +1,7 @@
+\(defv name "Nora's Website")
+\(defv github "https://github.com/0x3444ac53")
+\(defv instagram "https://www.instagram.com/discounted_dyke")
+
+\(macro headerlink (rel type href)
+    (% "<link rel=\"~a\" type=\"~a\" href=\"~a\">" rel type href))
+

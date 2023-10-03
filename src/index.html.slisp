@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <meta charset="utf-8"/>
 <html>
-    <meta name="viewport"  content="width=device-width">
-    $<(headerlink stylesheet "text/css"  "src/css/index.css")>$
-    $<(headerlink icon       "image/jpg" "src/imgs/icon.jpg")>$
-    <script src="https://kit.fontawesome.com/4806c69909.js" crossorigin="anonymous"></script>
-    <!---
-        $<(func doos (page "https://www.dictionaryofobscuresorrows.com/search/{0}" "{0}"))>$
-        $<(func make_diag (concat "" "<dialog id={0}><p>{1}</p><form method='dialog'><button>{2}</button></form></dialog>"))>$ 
-        $<(func make_link "<a class='{1}' href='javascript:{0}.showModal()'>{2}</a>")>$
-    --->
     <head>
+        <meta name="viewport"  content="width=device-width">
+        \headerlink{stylesheet}{text/css}{src/css/index.css}
+        \headerlink{icon}{image/jpg}{src/imgs/icon.jpg}
+        <script src="https://kit.fontawesome.com/4806c69909.js" crossorigin="anonymous"></script>
+    <!---
+        \(macro doos (word) ($page (% "https://www.dictionaryofobscuresorrows.com/search/~a" "~a" word word)))
+        \(macro make_diag (id paragraph button_text) (% "<dialog id=\"~a\"><p>~a</p><form method='dialog'><button>~a</button></form></dialog>" id message button_text))
+        \(macro make_link (id class text) (% "<a class='~a' href='javascript:~a.showModal()'>~a</a>" class id text))
+
+\(defv *footnotes* nil)
+
+\(macro footnote (text)
+   (push text *footnotes*)
+   (% "<sup>~a</sup>" (length *footnotes*)))
+
+\(defn print-footnotes ()
+   ($! #\Newline)
+   (loop for note in (reverse *footnotes*) for i from 1 to (length *footnotes*) do
+     (%! "~a. " i)
+     (% "~a~%" note)))
+    --->
         <title>
-            $<(name)>$
+            \name
         </title>
     </head>
     <body>
     <pre>
-    $<(preimg)>$
+        \squid
     </pre>
-        <p style="font-family: HandWriting">
+        <p style="font-family: HandWriting" id="magic">
             Being me is kind of like
             reading a sequel to the 
             $<(page "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript" "voynich manuscript")>$, 
