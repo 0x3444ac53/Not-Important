@@ -1,28 +1,56 @@
+\(include "main.lips")
+
+\-(defv my_pages (list
+    (concat (icon "fa-book-journal-whills")
+        (page "https://en.wikipedia.org/wiki/Plagiarism" "My Art"))
+    (concat (icon "fa-headphones") 
+        (page "./spotify.html" "Things I listen to"))
+    (concat (icon "fa-icons") 
+        (page "./articles.html" "Internet Things"))
+    (concat (icon "fa-book-bookmark")
+        (page "./books.html" "Books" ))))
+
+\-(defv otherlinks (list 
+    (concat (icon "fa-code-branch") 
+        (atag "https://github.com/0x3444ac53/Not-Important" "social" "this site") 
+        "on github")
+    (concat (icon "fa-code-branch")
+        (atag "https://github.com/0x3444ac53/HCSL" "social" "a dsl") 
+        "called 'slisp' that I created to template this site (retired)")
+    (concat (icon "fa-code-branch")
+        (atag "https://github.com/zc1036/lips" "social" "Lips")
+        "Which is currently used to template this website")))
+
+\-(defv socials (list
+    (concat (icon "fa-camera-retro")
+        (atag instagram "social" "discounted_dyke"))
+    (concat (icon "fa-camera-retro") 
+        (atag "https://www.instagram.com/squid_leafs/" "social" "squid_leafs"))
+    (concat (icon "fa-code-commit") 
+        (atag github "social" "github"))))
+
+\(ulist socials)
+
 <!DOCTYPE html>
 <meta charset="utf-8"/>
 <html>
     <head>
         <meta name="viewport"  content="width=device-width">
-        \headerlink{stylesheet}{text/css}{src/css/index.css}
-        \headerlink{icon}{image/jpg}{src/imgs/icon.jpg}
+        \(headerlink "stylesheet" "text/css" "src/css/index.css")
+        \(headerlink "icon" "image/jpg" "src/imgs/icon.jpg")
         <script src="https://kit.fontawesome.com/4806c69909.js" crossorigin="anonymous"></script>
-    <!---
-        \(macro doos (word) ($page (% "https://www.dictionaryofobscuresorrows.com/search/~a" "~a" word word)))
-        \(macro make_diag (id paragraph button_text) (% "<dialog id=\"~a\"><p>~a</p><form method='dialog'><button>~a</button></form></dialog>" id message button_text))
-        \(macro make_link (id class text) (% "<a class='~a' href='javascript:~a.showModal()'>~a</a>" class id text))
-
-\(defv *footnotes* nil)
-
-\(macro footnote (text)
-   (push text *footnotes*)
-   (% "<sup>~a</sup>" (length *footnotes*)))
-
-\(defn print-footnotes ()
-   ($! #\Newline)
-   (loop for note in (reverse *footnotes*) for i from 1 to (length *footnotes*) do
-     (%! "~a. " i)
-     (% "~a~%" note)))
-    --->
+        \-(defn doos (word) 
+            (page (format nil
+                "https://www.dictionaryofobscuresorrows.com/search/~a" 
+                "~a" word) word))
+        \-(defn make_diag (id paragraph button_text) 
+            (format nil (concatenate 'string
+            "<dialog id=\"~a\"><p>~a</p><form method='dialog'>"
+            "<button>~a</button>"
+            "</form></dialog>") id paragraph button_text))
+        \-(defn make_link (id class text) 
+            (format nil "<a class='~a' href='javascript:~a.showModal()'>~a</a>" 
+            class id text))
         <title>
             \name
         </title>
@@ -34,67 +62,44 @@
         <p style="font-family: HandWriting" id="magic">
             Being me is kind of like
             reading a sequel to the 
-            $<(page "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript" "voynich manuscript")>$, 
+            \(page "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript" "voynich manuscript"), 
             and the entire time there is a crushing feeling of 
-            $<(doos "agnosthesia")>$, 
+            \(doos "agnosthesia"), 
             references to books I've never read and a lot of meandering about 
-            $<(doos "midding")>$. There is a trend toward 
-            $<(doos "altschmerz")>$ somewhere in the middle, and a longing for 
-            $<(concat "" (doos "flashover") "s")>$ that may never come. The 
-            $<(doos "liberosis")>$ is palatable. With this last chapter of my life closing there is a focus on 
-            $<(doos "adronitis")>$, and a desperation towards creating a new 
-            $<(doos "rigor samsa")>$ knowing this will only exacerbate the disconnected 
-            $<(doos "sonder")>$ I'm prone to. I do what I can to submit myself to 
-            $<(page "https://archive.nytimes.com/opinionator.blogs.nytimes.com/2013/06/15/i-know-what-you-think-of-me/?smid=pl-share" "the mortifying ordeal")>$,
+            \(doos "midding"). There is a trend toward 
+            \(doos "altschmerz") somewhere in the middle, and a longing for 
+            \(doos "flashover")s that may never come. The 
+            \(doos "liberosis") is palpable. With this last chapter of my life closing there is a focus on 
+            \(doos "adronitis"), and a desperation towards creating a new 
+            \(doos "rigor samsa") knowing this will only exacerbate the disconnected 
+            \(doos "sonder") I'm prone to. I do what I can to submit myself to 
+            \(page "https://archive.nytimes.com/opinionator.blogs.nytimes.com/2013/06/15/i-know-what-you-think-of-me/?smid=pl-share" "the mortifying ordeal"),
             and yet whenever I have, I've only felt mortified and never known.
             I can tell people I am in my 1989 era, or my modern philosophy era,
-            but I am neither a $<(page "https://open.spotify.com/track/1p80LdxRV74UKvL8gnD7ky" "nightmare dressed like a daydream")>$ nor 
-            $<(page "https://plato.stanford.edu/entries/descartes-ideas/#ideas" "a thinking thing that thinks.")>$
+            but I am neither a \(page "https://open.spotify.com/track/1p80LdxRV74UKvL8gnD7ky" "nightmare dressed like a daydream") nor 
+            \(page "https://plato.stanford.edu/entries/descartes-ideas/#ideas" "a thinking thing that thinks.")
             To my mind,
             I am the 
             collective efforts of the ancestors, and
             a mosaic of all the ideas I have ever encountered. 
             Why should I pretend to be  original, 
-            <!---
-            $<(push (concat " " (icon "fa-book-journal-whills") (page "https://en.wikipedia.org/wiki/Plagiarism" "My Art")))>$
-            $<(push (concat " " (icon "fa-headphones") (page "./spotify.html" "Things I listen to")))>$
-            $<(push (concat " " (icon "fa-icons") (page "./articles.html" "Internet Things")))>$
-            $<(push (concat " " (icon "fa-book-bookmark") (page "./books.html" "Books" )))>$
-            --->
-            $<(make_link "pages_list" "pages" "when all I am is these ideas that belong to other people?")>$</br>
-            <!--
-                $<(debug)>$
-            --->
-            $<(make_diag "pages_list" (concat "\n" "<h1>Influences:</h1>" (ul (concat "\n" (li (pop)) (li (pop)) (li (pop)) (li (pop))))) "okay")>$
-            <!--
-                $<(debug)>$
-            --->
+            \(make_link "pages_list" "pages" "when all I am is these ideas that belong to other people?")</br>
+            
+        \(make_diag "pages_list" (concat
+        "<h1>Influences:</h1></br>" 
+            (ulist my_pages)) "okay"))
         </p>
-            <!---
-            $<(push (concat " " (icon "fa-code-branch") (atag "https://github.com/0x3444ac53/Not-Important" "social" "this site") "on github"))>$
-            $<(push (concat " " (icon "fa-code-branch") (atag "https://github.com/0x3444ac53/HCSL" "social" "a dsl") "called 'slisp' that I created to template this site"))>$
-            $<(map li)>$
-            --->
         </br>
         <p>
             Other Links :
-            $<(ul (concat "\n"))>$
+            \(ulist otherlinks)
         </p>
         </br>
-             <!---
-            $<(push (concat " " (icon "fa-camera-retro") (atag (instagram) social "discounted_dyke")))>$
-            $<(push (concat " " (icon "fa-camera-retro") (atag "https://www.instagram.com/squid_leafs/" social "squid_leafs")))>$
-            $<(push (concat " " (icon "fa-code-commit") (atag (github) social github)))>$
-            $<(map li)>$
-            --->
+
         <p>
             Social :
         </p>
-            $<(ul (concat "\n"))>$
+            \(ulist socials)
         </br>
-            <!---
-            $<(push (execute (get_carbon_src "main.slisp")))>$
-            $<(carbon (pop))>$
-            --->
         </body>
 </html>

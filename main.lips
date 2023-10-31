@@ -2,31 +2,37 @@
 \(defv github "https://github.com/0x3444ac53")
 \(defv instagram "https://www.instagram.com/discounted_dyke")
 
-\(macro atag (link class text)
-    (% "<a href=\"~a\" class=\"~a\">~a</a>" link class text))
+\(defn atag (link class text)
+    (format nil "<a href=\"~a\" class=\"~a\">~a</a>" link class text))
 
-\(macro page (link text)
-    ($atag link "pages" text)) 
+\(defn page (link text)
+    (atag link "pages" text)) 
 
-\(macro art (link text)
-    ($atag link "article" text)) 
+\(defn art (link text)
+    (atag link "article" text)) 
 
-\(macro artist (link text)
-    ($atag link "bloglink" text))
+\(defn artist (link text)
+    (atag link "bloglink" text))
 
 \(defn ulist (test)
-    ($ "<ul>")
-    (loop for i in test do 
-        (% "<li>~a</li>" i))
-    ($ "</ul>"))
+    (format nil "<ul>~%</ul>"
+    (loop for str in test do 
+        (collect (format nil "<li>~a<\li>~%" str)))))
+    
 
-\(macro icon (iconname) (% "<i style=color:inherit class='fa-solid ~a'></i>" iconname))
+\(defn icon (iconname) 
+    (format nil "<i style=color:inherit class='fa-solid ~a'></i>" iconname))
 
-\(macro headerlink (rel type href)
-    (% "<link rel=\"~a\" type=\"~a\" href=\"~a\">" rel type href))
+\(defn headerlink (rel type href)
+    (format nil "<link rel=\"~a\" type=\"~a\" href=\"~a\">" rel type href))
 
-\(macro img (src alt width height) 
-(% "<img src='~a' alt='~a' width='~a' height='~a'>" src alt width height))
+\(defn img (src alt width height) 
+(format nil "<img src='~a' alt='~a' width='~a' height='~a'>" src alt width height))
 
 \(defv squid 
-($atag "/index.html" "" ($img "src/imgs/squid.png" "squid" "120px" "auto")))
+(atag "/index.html" "" (img "src/imgs/squid.png" "squid" "120px" "auto")))
+
+\(defn concat (&rest strings)
+    (apply #'concatenate 'string strings))
+
+\(concat "h" "e" "l" "l")
