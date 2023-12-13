@@ -1,6 +1,6 @@
 @font-face {
     font-family: HandWriting;
-    src: url("../fonts/grune-Regular.otf") format("opentype");
+    src: url("../fonts/kiwi.ttf") format("opentype");
 }
 
 @font-face {
